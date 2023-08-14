@@ -6,8 +6,8 @@ const FeedbackOptions = props => {
 
   return (
     <ButtonsLayout>
-      {options.map((option, index) => (
-        <Button key={index} onClick={() => onLeaveFeedback(option)}>
+      {options.map(option => (
+        <Button key={option} onClick={() => onLeaveFeedback(option)}>
           {option[0].toUpperCase() + option.slice(1)}
         </Button>
       ))}
